@@ -1,22 +1,22 @@
 /*
  * SPDX-License-Identifier: GPL-3.0
- * Vencord Installer, a cross platform gui/cli app for installing Vencord
- * Copyright (c) 2023 Vendicated and Vencord contributors
+ * Scorncord Installer, a cross platform gui/cli app for installing Scorncord
+ * Copyright (c) 2025 Scorncord contributors
  */
 
 package main
 
 import (
 	"image/color"
-	"vencordinstaller/buildinfo"
+	"scprmcordinstaller/buildinfo"
 )
 
-const ReleaseUrl = "https://api.github.com/repos/Vendicated/Vencord/releases/latest"
-const ReleaseUrlFallback = "https://vencord.dev/releases/vencord"
-const InstallerReleaseUrl = "https://api.github.com/repos/Vencord/Installer/releases/latest"
-const InstallerReleaseUrlFallback = "https://vencord.dev/releases/installer"
+const ReleaseUrl = "https://api.github.com/repos/Scorncord/Scorncord/releases/latest"
+const ReleaseUrlFallback = "https://scorncord.erroroliver.lol/releases/Scorncord"
+const InstallerReleaseUrl = "https://api.github.com/repos/Scorncord/Installer/releases/latest"
+const InstallerReleaseUrlFallback = "https://scorncord.erroroliver.lol/releases/installer"
 
-var UserAgent = "VencordInstaller/" + buildinfo.InstallerGitHash + " (https://github.com/Vencord/Installer)"
+var UserAgent = "VencordInstaller/" + buildinfo.InstallerGitHash + " (https://github.com/Scorncord/Installer)"
 
 var (
 	DiscordGreen  = color.RGBA{R: 0x2D, G: 0x7C, B: 0x46, A: 0xFF}
