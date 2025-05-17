@@ -42,7 +42,7 @@ jobs:
           chmod +x ScorncordInstallerCli-linux
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@3a1f48f5cb5b8f3cbd876aa1e85f40880fb7b404
         with:
           name: ScorncordInstaller-linux
           path: |
