@@ -8,7 +8,7 @@ package main
 
 import (
 	"image/color"
-	"scprmcordinstaller/buildinfo"
+	"scorncordinstaller/buildinfo"
 )
 
 const ReleaseUrl = "https://api.github.com/repos/Scorncord/Scorncord/releases/latest"
