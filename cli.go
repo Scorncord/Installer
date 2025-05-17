@@ -2,8 +2,8 @@
 
 /*
  * SPDX-License-Identifier: GPL-3.0
- * Vencord Installer, a cross platform gui/cli app for installing Vencord
- * Copyright (c) 2023 Vendicated and Vencord contributors
+ * Scorncord Installer, a cross platform gui/cli app for installing Scorncord
+ * Copyright (c) 2023 Scorncord contributors
  */
 
 package main
@@ -17,7 +17,7 @@ import (
 	"os"
 	"runtime"
 	"strings"
-	"vencordinstaller/buildinfo"
+	"scorncordinstaller/buildinfo"
 )
 
 var discords []any
@@ -62,8 +62,8 @@ func main() {
 	}
 
 	if *versionFlag {
-		fmt.Println("Vencord Installer Cli", buildinfo.InstallerTag, "("+buildinfo.InstallerGitHash+")")
-		fmt.Println("Copyright (C) 2023 Vendicated and Vencord contributors")
+		fmt.Println("Scorncord Installer Cli", buildinfo.InstallerTag, "("+buildinfo.InstallerGitHash+")")
+		fmt.Println("Copyright (C) 2025 Scorncord contributors")
 		fmt.Println("License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.")
 		return
 	}
@@ -102,18 +102,18 @@ func main() {
 			<-SelfUpdateCheckDoneChan
 			if IsSelfOutdated {
 				Log.Warn("Your installer is outdated.")
-				Log.Warn("To update, select the 'Update Vencord Installer' option to update, or run with --update-self")
+				Log.Warn("To update, select the 'Update Scorncord Installer' option to update, or run with --update-self")
 			}
 		}()
 
 		choices := []string{
-			"Install Vencord",
-			"Repair Vencord",
-			"Uninstall Vencord",
+			"Install Scorncord",
+			"Repair Scorncord",
+			"Uninstall Scorncord",
 			"Install OpenAsar",
 			"Uninstall OpenAsar",
 			"View Help Menu",
-			"Update Vencord Installer",
+			"Update Scorncord Installer",
 			"Quit",
 		}
 		_, choice, err := (&promptui.Select{
@@ -276,5 +276,5 @@ func HandleScuffedInstall() {
 	fmt.Println("Hold On!")
 	fmt.Println("You have a broken Discord Install.")
 	fmt.Println("Please reinstall Discord before proceeding!")
-	fmt.Println("Otherwise, Vencord will likely not work.")
+	fmt.Println("Otherwise, Scorncord will likely not work.")
 }
