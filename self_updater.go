@@ -1,7 +1,7 @@
 /*
  * SPDX-License-Identifier: GPL-3.0
- * Vencord Installer, a cross platform gui/cli app for installing Vencord
- * Copyright (c) 2023 Vendicated and Vencord contributors
+ * Scorncord Installer, a cross platform gui/cli app for installing Scorncord
+ * Copyright (c) 2025 Scorncord contributors
  */
 
 package main
@@ -46,15 +46,15 @@ func init() {
 }
 
 func GetInstallerDownloadLink() string {
-	const BaseUrl = "https://github.com/Vencord/Installer/releases/latest/download/"
+	const BaseUrl = "https://github.com/Scorncord/Installer/releases/latest/download/"
 	switch runtime.GOOS {
 	case "windows":
-		filename := Ternary(buildinfo.UiType == buildinfo.UiTypeCli, "VencordInstallerCli.exe", "VencordInstaller.exe")
+		filename := Ternary(buildinfo.UiType == buildinfo.UiTypeCli, "ScorncordInstallerCli.exe", "ScorncordInstaller.exe")
 		return BaseUrl + filename
 	case "darwin":
-		return BaseUrl + "VencordInstaller.MacOS.zip"
+		return BaseUrl + "ScorncordInstaller.MacOS.zip"
 	case "linux":
-		return BaseUrl + "VencordInstallerCli-linux"
+		return BaseUrl + "ScorncordInstallerCli-linux"
 	default:
 		return ""
 	}
@@ -90,7 +90,7 @@ func UpdateSelf() error {
 	}
 	defer res.Body.Close()
 
-	tmp, err := os.CreateTemp(ownExeDir, "VencordInstallerUpdate")
+	tmp, err := os.CreateTemp(ownExeDir, "ScorncordInstallerUpdate")
 	if err != nil {
 		return fmt.Errorf("Failed to create tempfile: %w", err)
 	}
