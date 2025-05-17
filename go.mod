@@ -1,4 +1,4 @@
-module vencordinstaller
+module scorncordinstaller
 
 go 1.20
 
