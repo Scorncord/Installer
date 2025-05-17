@@ -3,13 +3,13 @@
 <plist version="1.0">
     <dict>
         <key>CFBundleExecutable</key>
-        <string>VencordInstaller</string>
+        <string>ScorncordInstaller</string>
 
         <key>CFBundleIconFile</key>
         <string>icon.icns</string>
 
         <key>CFBundleIdentifier</key>
-        <string>dev.vendicated.vencordinstaller</string>
+        <string>dev.scorncord.scorncordinstaller</string>
 
         <key>NSHighResolutionCapable</key>
         <true/>
