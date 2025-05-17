@@ -1,12 +1,12 @@
-# Vencord Installer
+# Scorncord Installer
 
-The Vencord Installer allows you to install [Vencord, the cutest Discord Desktop client mod](https://github.com/Vendicated/Vencord)
+The Scorncord Installer allows you to install [Scorncord, the cutest Discord Desktop client mod](https://github.com/Scorncord/Scorncord)
 
 ![image](https://user-images.githubusercontent.com/45497981/226734476-5fb42420-844d-4e27-ae06-4799118e086e.png)
 
 ## Usage
 
-See https://vencord.dev/download
+See https://scorncord.erroroliver.lol/download
 
 ## Building from source
 
@@ -63,4 +63,4 @@ go build --tags cli
 ```
 
 You might want to pass some flags to this command to get a better build.
-See [the GitHub workflow](https://github.com/Vendicated/VencordInstaller/blob/main/.github/workflows/release.yml) for what flags I pass or if you want more precise instructions
+See [the GitHub workflow](https://github.com/Scorncord/Installer/blob/main/.github/workflows/release.yml) for what flags I pass or if you want more precise instructions
