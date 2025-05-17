@@ -1,7 +1,7 @@
 /*
  * SPDX-License-Identifier: GPL-3.0
  * Scorncord Installer, a cross platform gui/cli app for installing Scorncord
- * Copyright (c) 2023 Scorncord contributors
+ * Copyright (c) 2025 Scorncord contributors
  */
 
 package main
