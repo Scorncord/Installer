@@ -1,7 +1,7 @@
 /*
  * SPDX-License-Identifier: GPL-3.0
- * Vencord Installer, a cross platform gui/cli app for installing Vencord
- * Copyright (c) 2023 Vendicated and Vencord contributors
+ * Scorncord Installer, a cross platform gui/cli app for installing Scorncord
+ * Copyright (c) 2025 Scorncord contributors
  */
 
 package main
@@ -60,7 +60,7 @@ func GetGithubRelease(url, fallbackUrl string) (*GithubRelease, error) {
 		triedFallback := url == fallbackUrl
 
 		// GitHub has a very strict 60 req/h rate limit and some (mostly indian) isps block github for some reason.
-		// If that is the case, try our fallback at https://vencord.dev/releases/project
+		// If that is the case, try our fallback at https://scorncord.erroroliver.lol/releases/project
 		if isRateLimitedOrBlocked && !triedFallback {
 			Log.Error(fmt.Sprintf("Failed to fetch %s (status code %d). Trying fallback url %s", url, res.StatusCode, fallbackUrl))
 			return GetGithubRelease(fallbackUrl, fallbackUrl)
@@ -130,9 +130,9 @@ func InitGithubDownloader() {
 		return
 	}
 
-	Log.Debug("Found existing Vencord Install. Checking for hash...")
+	Log.Debug("Found existing Scorncord Install. Checking for hash...")
 
-	re := regexp.MustCompile(`// Vencord (\w+)`)
+	re := regexp.MustCompile(`// Scorncord (\w+)`)
 	match := re.FindSubmatch(b)
 	if match != nil {
 		InstalledHash = string(match[1])
