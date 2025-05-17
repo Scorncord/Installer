@@ -1,7 +1,7 @@
 /*
  * SPDX-License-Identifier: GPL-3.0
- * Vencord Installer, a cross platform gui/cli app for installing Vencord
- * Copyright (c) 2023 Vendicated and Vencord contributors
+ * Scorncord Installer, a cross platform gui/cli app for installing Scorncord
+ * Copyright (c) 2023 Scorncord contributors
  */
 
 package main
@@ -19,19 +19,19 @@ var BaseDir string
 var VencordDirectory string
 
 func init() {
-	if dir := os.Getenv("VENCORD_USER_DATA_DIR"); dir != "" {
-		Log.Debug("Using VENCORD_USER_DATA_DIR")
+	if dir := os.Getenv("SCORNCORD_USER_DATA_DIR"); dir != "" {
+		Log.Debug("Using SCORNCORD_USER_DATA_DIR")
 		BaseDir = dir
 	} else if dir = os.Getenv("DISCORD_USER_DATA_DIR"); dir != "" {
 		Log.Debug("Using DISCORD_USER_DATA_DIR/../VencordData")
 		BaseDir = path.Join(dir, "..", "VencordData")
 	} else {
 		Log.Debug("Using UserConfig")
-		BaseDir = appdir.New("Vencord").UserConfig()
+		BaseDir = appdir.New("Scorncord").UserConfig()
 	}
 
-	if dir := os.Getenv("VENCORD_DIRECTORY"); dir != "" {
-		Log.Debug("Using VENCORD_DIRECTORY")
+	if dir := os.Getenv("SCORNCORD_DIRECTORY"); dir != "" {
+		Log.Debug("Using SCORNCORD_DIRECTORY")
 		VencordDirectory = dir
 	} else {
 		VencordDirectory = path.Join(BaseDir, "vencord.asar")
