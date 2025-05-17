@@ -13,7 +13,7 @@ echo "Downloading Installer..."
 
 set -- "XDG_CONFIG_HOME=$XDG_CONFIG_HOME"
 
-curl -sS https://github.com/Vendicated/VencordInstaller/releases/latest/download/VencordInstallerCli-Linux \
+curl -sS https://github.com/Scorncord/ScorncordInstaller/releases/latest/download/ScorncordInstallerCli-Linux \
   --output "$outfile" \
   --location \
   --fail
